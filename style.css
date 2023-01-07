@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: black;
+}
+
+.videoArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+video {
+  width: 80%;
+  height: 80%;
+  border-radius: 15px;
+}
+
+.videoName {
+  width: 60%;
+  text-align: end;
+}
+
+.buttonArea {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin-top: 1.5px;
+  padding-left: 4px;
+  height: 40px;
+  z-index: 1000;
+  background: gray;
+}
+
+button {
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  height: 30px;
+  padding: 5px;
+}
+
+#volinc {
+  width: 30px;
+}
+.fa-solid fa-volume {
+  width: 30px;
+}
+
+p {
+  color: white;
+}
+
+.i {
+  z-index: 1000;
+}
+
+video::-webkit-media-controls-timeline {
+  display: none;
+}

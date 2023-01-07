@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>video player</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="videoArea">
+        <video
+          src="mixkit-daytime-city-traffic-aerial-view-56-medium.mp4"
+          class="video"
+        ></video>
+        <audio src="mixkit.mp3"></audio>
+        <div class="buttonArea">
+          <button id="playpause" type="button" data-state="play">
+            <i class="fa-solid fa-play"></i>
+          </button>
+          <button id="volinc" type="button" data-state="volup">
+            <i class="fa-duotone fa-volume"></i
+            ><!--//why it is not shown-->
+          </button>
+          <progress id="progress" value="0" min="100">
+            <span id="progress-bar" ></span>
+          </progress>
+          <p class="videoName">Drone Shot</p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/315b9aa27b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
