@@ -64,3 +64,11 @@ p {
 video::-webkit-media-controls-timeline {
   display: none;
 }
+
+#progress-bar {
+  width: 150px;
+}
+
+progress {
+  width: 150px;
+}

@@ -1,6 +1,7 @@
 const video = document.querySelector("video");
 const audio = document.querySelector("audio")
 const progress = document.getElementById("progress");
+const progressBar = document.getElementById("progress-bar")
 
 document.addEventListener("keydown", function (event) {
   if (event.code === "Space") {
@@ -9,17 +10,14 @@ document.addEventListener("keydown", function (event) {
       audio.play();
     } else {
       video.pause();
-      audio.pause()// how not to get video title moved
+      audio.pause()
     }
   }
 });
 
  video.addEventListener("timeupdate", function() {
-   var percent = Math.floor((100 / video.duration) * video.currentTime);
-   progress.value = percent;
-   progress.style.width = `${(video.currentTime/ video.duration) * 100}%`
-   console.log(percent)
-   if(percent === 100){
+   progress.value = video.currentTime / video.duration;
+   if(progress.value===1){
     audio.pause()
    }
  });
