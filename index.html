@@ -24,12 +24,17 @@
             <i class="fa-solid fa-play"></i>
           </button>
           <button id="volinc" type="button" data-state="volup">
-            <i class="fa-solid fa-volume"></i><!--//why it is not shown-->
+            <i class="fa-solid fa-volume"></i
+            ><!--//why it is not shown-->
           </button>
-          <progress id="progress" value="0" >
+          <progress id="progress" value="0">
             <span id="progress-bar"></span>
           </progress>
-          <p class="videoName">Drone Shot</p>
+          <div class="right">
+            <p class="videoName">Drone Shot</p>
+            <p class="videoCurrentTime">0:00 / 0:13</p>
+            <button type="toggle" class="toggleExpand" onclick="expandGo()"><i class="fa-solid fa-expand"></i></button>
+          </div>
         </div>
       </div>
     </div>
