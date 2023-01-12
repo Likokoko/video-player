@@ -22,11 +22,6 @@ video {
   border-radius: 15px;
 }
 
-.videoName {
-  width: 60%;
-  text-align: end;
-}
-
 .buttonArea {
   display: flex;
   align-items: center;
@@ -71,4 +66,35 @@ video::-webkit-media-controls-timeline {
 
 progress {
   width: 150px;
+}
+
+.right {
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: center;
+  width: 1200px;
+}
+
+.videoCurrentTime {
+  margin: 0px 10px;
+}
+
+.toggleExpand{
+  background:inherit;
+}
+.fa-expand {
+  color: white;
+  font-size: larger;
+  margin-right:2px;
+  margin-left:4px;
+}
+
+.videoName {
+  width: 83%;
+  text-align: end;
+}
+
+.hidden{
+  display:none;
 }
